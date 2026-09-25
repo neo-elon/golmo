@@ -23,6 +23,15 @@ fs.readdirSync(distAssets).forEach(file => {
   console.log(`Copied ${file} to assets/`);
 });
 
+// Ensure favicon exists in both root and assets
+const publicFav = path.join(rootDir, 'public', 'favicon.svg');
+if (fs.existsSync(publicFav)) {
+  fs.copyFileSync(publicFav, path.join(rootAssets, 'favicon.svg'));
+  fs.copyFileSync(publicFav, path.join(rootAssets, 'favicon-HV1kWBx1.svg'));
+  fs.copyFileSync(publicFav, path.join(rootDir, 'favicon.svg'));
+  console.log('Ensured favicons in root and assets/');
+}
+
 // 2. Copy dist/index.html to root index.html (for GitHub Pages root branch deploy)
 const distIndex = path.join(rootDir, 'dist', 'index.html');
 const rootIndex = path.join(rootDir, 'index.html');
