@@ -39,7 +39,9 @@ export default function MapViewer({
     const tileLayer = L.tileLayer(getTileUrl(lang), {
       maxZoom: 20,
       subdomains: ['0', '1', '2', '3'],
-      attribution: '&copy; Google Maps'
+      attribution: '&copy; Google Maps',
+      crossOrigin: 'anonymous',
+      referrerPolicy: 'no-referrer'
     }).addTo(map);
 
     tileLayerRef.current = tileLayer;
