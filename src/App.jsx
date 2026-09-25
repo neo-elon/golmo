@@ -56,8 +56,14 @@ export default function App() {
   const simRouteIndexRef = useRef(0);
   const watchGpsIdRef = useRef(null);
 
-  // Route simulation coordinates
+  // Route simulation coordinates (follows actual street-level walking path)
   const simulatedRoute = useMemo(() => {
+    if (activeTour.walkingRoutePath && activeTour.walkingRoutePath.length > 0) {
+      return activeTour.walkingRoutePath.map((coord) => ({
+        lat: coord[0],
+        lng: coord[1]
+      }));
+    }
     return generateWalkingRoute(activeTour.stops, 8);
   }, [activeTour]);
 

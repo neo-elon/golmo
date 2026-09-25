@@ -1,4 +1,7 @@
 // GOLMO Tour Data & Stop Definitions
+import seochonRoute from './seochonRoute.json';
+import cheongnaRoute from './cheongnaRoute.json';
+
 export const TOURS = [
   {
     id: "seochon-whispering-alleys",
@@ -17,6 +20,7 @@ export const TOURS = [
     difficulty: "Easy Walk",
     category: "History & Hidden Alleys",
     coverImage: "https://images.unsplash.com/photo-1548115184-bc6544d06a58?auto=format&fit=crop&w=1200&q=80",
+    walkingRoutePath: seochonRoute,
     creator: {
       name: "Minji Song",
       role: "Local Cultural Archivist & Seochon Native",
@@ -157,6 +161,7 @@ Today, the original rough plaster walls, wooden door numbers, and creaking stair
     difficulty: "Breeze Walk",
     category: "Waterfront & Modern Cityscape",
     coverImage: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+    walkingRoutePath: cheongnaRoute,
     creator: {
       name: "Daniel Kang",
       role: "Urban Architect & Sunset Runner",

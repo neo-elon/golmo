@@ -82,21 +82,26 @@ export default function MapViewer({
     stopMarkersRef.current = {};
     geofenceCirclesRef.current = {};
 
-    const latLngs = tour.stops.map((s) => [s.lat, s.lng]);
+    const stopLatLngs = tour.stops.map((s) => [s.lat, s.lng]);
+    
+    // Prefer actual detailed street walking path if available
+    const walkingCoords = (tour.walkingRoutePath && tour.walkingRoutePath.length > 0)
+      ? tour.walkingRoutePath
+      : stopLatLngs;
 
-    // Draw connecting alley path
-    polylineRef.current = L.polyline(latLngs, {
-      color: '#ff7e36',
-      weight: 3.5,
-      opacity: 0.75,
-      dashArray: '8, 8',
+    // Draw connecting alley path following actual streets and corners
+    polylineRef.current = L.polyline(walkingCoords, {
+      color: '#ea580c',
+      weight: 4.5,
+      opacity: 0.85,
+      dashArray: '6, 8',
       lineCap: 'round',
       lineJoin: 'round'
     }).addTo(map);
 
     // Smoothly fly camera to new tour area
-    if (latLngs.length > 0) {
-      map.flyToBounds(L.latLngBounds(latLngs), {
+    if (stopLatLngs.length > 0) {
+      map.flyToBounds(L.latLngBounds(stopLatLngs), {
         padding: [60, 60],
         maxZoom: 16,
         duration: 1.2
