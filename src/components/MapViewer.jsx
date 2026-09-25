@@ -31,8 +31,8 @@ export default function MapViewer({
       attributionControl: false
     });
 
-    // Dark Matter tile layer (CartoDB) - Clean, aesthetic, dark theme
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', {
+    // CartoDB Voyager tile layer - Bright, vivid, aesthetic light theme
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
       maxZoom: 19,
       subdomains: 'abcd'
     }).addTo(map);

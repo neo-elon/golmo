@@ -33,15 +33,16 @@ export default function TourSelectorModal({
                 <div
                   key={tour.id}
                   style={{
-                    background: isSelected ? 'rgba(255, 126, 54, 0.08)' : 'rgba(255, 255, 255, 0.04)',
-                    border: `1px solid ${isSelected ? 'var(--accent-amber)' : 'rgba(255, 255, 255, 0.08)'}`,
+                    background: isSelected ? 'rgba(234, 88, 12, 0.06)' : '#f8fafc',
+                    border: `1px solid ${isSelected ? 'var(--accent-amber)' : 'rgba(15, 23, 42, 0.08)'}`,
                     borderRadius: '16px',
                     padding: '16px',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '12px',
                     cursor: isAvailable ? 'pointer' : 'default',
-                    transition: 'all 0.2s ease'
+                    transition: 'all 0.2s ease',
+                    boxShadow: isSelected ? '0 4px 16px rgba(234, 88, 12, 0.12)' : 'none'
                   }}
                   onClick={() => isAvailable && onSelectTour(tour)}
                 >
@@ -53,25 +54,25 @@ export default function TourSelectorModal({
                     />
                     <div style={{ flex: 1 }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                        <span style={{ fontSize: '0.72rem', color: '#ff7e36', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                        <span style={{ fontSize: '0.72rem', color: '#ea580c', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                           {tour.district}
                         </span>
-                        <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#f59e0b' }}>
+                        <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#d97706' }}>
                           ${tour.price}
                         </span>
                       </div>
 
-                      <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#fff', marginTop: '3px' }}>
+                      <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)', marginTop: '3px' }}>
                         {lang === 'kr' ? tour.titleKr : tour.title}
                       </h3>
 
-                      <p style={{ fontSize: '0.8rem', color: '#94a3b8', marginTop: '4px', lineHeight: '1.4' }}>
+                      <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: '1.4' }}>
                         {lang === 'kr' ? tour.taglineKr : tour.tagline}
                       </p>
 
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginTop: '8px', fontSize: '0.74rem', color: '#cbd5e1' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginTop: '8px', fontSize: '0.74rem', color: 'var(--text-muted)' }}>
                         <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                          <Star size={12} color="#f59e0b" fill="#f59e0b" />
+                          <Star size={12} color="#d97706" fill="#d97706" />
                           <b>{tour.rating}</b> ({tour.reviewsCount})
                         </span>
                         <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
@@ -87,14 +88,14 @@ export default function TourSelectorModal({
                   </div>
 
                   {/* Creator info snippet */}
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid rgba(255, 255, 255, 0.06)', paddingTop: '10px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid rgba(15, 23, 42, 0.06)', paddingTop: '10px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <img
                         src={tour.creator.avatar}
                         alt={tour.creator.name}
                         style={{ width: '24px', height: '24px', borderRadius: '50%', objectFit: 'cover' }}
                       />
-                      <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
                         Guided by <b>{tour.creator.name}</b> ({tour.creator.role})
                       </span>
                     </div>

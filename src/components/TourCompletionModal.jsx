@@ -53,11 +53,11 @@ export default function TourCompletionModal({
             <Award size={44} />
           </div>
 
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.45rem', fontWeight: 800, color: '#fff' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.45rem', fontWeight: 800, color: 'var(--text-main)' }}>
             {lang === 'kr' ? '서촌 골목 탐험 완주를 축하합니다!' : 'Alley Quest Completed!'}
           </h2>
 
-          <p style={{ fontSize: '0.85rem', color: '#94a3b8', maxWidth: '380px' }}>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', maxWidth: '380px' }}>
             {lang === 'kr'
               ? '조선 시대의 성문부터 예술가들의 은신처까지, 서촌 6개 골목의 모든 이야기를 발견하셨습니다.'
               : 'You have listened to all 6 secret chapters of Seochon, walking through 600 years of living memories.'}
@@ -69,29 +69,29 @@ export default function TourCompletionModal({
             gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '12px',
             width: '100%',
-            background: 'rgba(255, 255, 255, 0.04)',
+            background: '#f8fafc',
             borderRadius: '16px',
             padding: '14px',
             margin: '12px 0',
-            border: '1px solid rgba(255, 255, 255, 0.08)'
+            border: '1px solid rgba(15, 23, 42, 0.08)'
           }}>
             <div>
-              <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#ff7e36' }}>
+              <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#ea580c' }}>
                 {completedCount}/{totalCount}
               </div>
-              <div style={{ fontSize: '0.72rem', color: '#64748b' }}>Stops Unlocked</div>
+              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Stops Unlocked</div>
             </div>
             <div>
-              <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#f59e0b' }}>
+              <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#d97706' }}>
                 {tour.distanceKm} km
               </div>
-              <div style={{ fontSize: '0.72rem', color: '#64748b' }}>Distance Walked</div>
+              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Distance Walked</div>
             </div>
             <div>
-              <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#10b981' }}>
+              <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#059669' }}>
                 {tour.durationMinutes} m
               </div>
-              <div style={{ fontSize: '0.72rem', color: '#64748b' }}>Time Spent</div>
+              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Time Spent</div>
             </div>
           </div>
 
@@ -100,16 +100,16 @@ export default function TourCompletionModal({
             display: 'flex',
             alignItems: 'center',
             gap: '10px',
-            background: 'rgba(255, 126, 54, 0.08)',
-            border: '1px solid rgba(255, 126, 54, 0.25)',
+            background: 'rgba(234, 88, 12, 0.06)',
+            border: '1px solid rgba(234, 88, 12, 0.2)',
             borderRadius: '12px',
             padding: '12px',
             width: '100%',
             textAlign: 'left'
           }}>
-            <Heart size={20} color="#ff7e36" style={{ flexShrink: 0 }} />
-            <div style={{ fontSize: '0.78rem', color: '#cbd5e1' }}>
-              <b style={{ color: '#fff' }}>Note from {tour.creator.name}:</b> "Thank you for walking gently through our neighborhood alleys. I hope you found a quiet piece of Seoul to carry with you."
+            <Heart size={20} color="#ea580c" style={{ flexShrink: 0 }} />
+            <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)' }}>
+              <b style={{ color: 'var(--text-main)' }}>Note from {tour.creator.name}:</b> "Thank you for walking gently through our neighborhood alleys. I hope you found a quiet piece of Seoul to carry with you."
             </div>
           </div>
 

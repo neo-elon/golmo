@@ -47,10 +47,10 @@ export default function CreatorStudioModal({ isOpen, onClose, lang }) {
               <DollarSign size={22} />
             </div>
             <div>
-              <h4 style={{ fontSize: '0.98rem', fontWeight: 700, color: '#fff' }}>
+              <h4 style={{ fontSize: '0.98rem', fontWeight: 700, color: 'var(--text-main)' }}>
                 Turn your local alleys into global passive income
               </h4>
-              <p style={{ fontSize: '0.78rem', color: '#cbd5e1', marginTop: '3px' }}>
+              <p style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', marginTop: '3px' }}>
                 Earn <b>70%</b> on every $4.99 ~ $9.99 tour sold. No need to walk with tour groups—your audio guide works 24/7.
               </p>
             </div>
@@ -58,30 +58,30 @@ export default function CreatorStudioModal({ isOpen, onClose, lang }) {
 
           {/* 3 Step Workflow */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '12px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
-              <div style={{ color: '#ff7e36', fontWeight: 800, fontSize: '0.85rem' }}>01. Map</div>
-              <p style={{ fontSize: '0.74rem', color: '#94a3b8', marginTop: '4px' }}>
+            <div style={{ background: '#f8fafc', padding: '12px', borderRadius: '12px', border: '1px solid rgba(15, 23, 42, 0.08)' }}>
+              <div style={{ color: '#ea580c', fontWeight: 800, fontSize: '0.85rem' }}>01. Map</div>
+              <p style={{ fontSize: '0.74rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
                 Drop pins on your favorite alley spots & set 25m trigger radius.
               </p>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '12px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
-              <div style={{ color: '#f59e0b', fontWeight: 800, fontSize: '0.85rem' }}>02. Voice</div>
-              <p style={{ fontSize: '0.74rem', color: '#94a3b8', marginTop: '4px' }}>
+            <div style={{ background: '#f8fafc', padding: '12px', borderRadius: '12px', border: '1px solid rgba(15, 23, 42, 0.08)' }}>
+              <div style={{ color: '#d97706', fontWeight: 800, fontSize: '0.85rem' }}>02. Voice</div>
+              <p style={{ fontSize: '0.74rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
                 Record your voice or use AI voice cloning in 12 languages.
               </p>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '12px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
-              <div style={{ color: '#10b981', fontWeight: 800, fontSize: '0.85rem' }}>03. Earn</div>
-              <p style={{ fontSize: '0.74rem', color: '#94a3b8', marginTop: '4px' }}>
+            <div style={{ background: '#f8fafc', padding: '12px', borderRadius: '12px', border: '1px solid rgba(15, 23, 42, 0.08)' }}>
+              <div style={{ color: '#059669', fontWeight: 800, fontSize: '0.85rem' }}>03. Earn</div>
+              <p style={{ fontSize: '0.74rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
                 Publish on the GOLMO marketplace with instant Stripe payouts.
               </p>
             </div>
           </div>
 
           {/* Mini Interactive Editor Demo */}
-          <div style={{ background: 'rgba(255, 255, 255, 0.03)', borderRadius: '14px', padding: '16px', border: '1px solid var(--border-subtle)' }}>
-            <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#f8fafc', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Sparkles size={14} color="#ff7e36" />
+          <div style={{ background: '#f8fafc', borderRadius: '14px', padding: '16px', border: '1px solid rgba(15, 23, 42, 0.08)' }}>
+            <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <Sparkles size={14} color="#ea580c" />
               <span>Interactive Geofence Stop Editor (Preview)</span>
             </div>
 

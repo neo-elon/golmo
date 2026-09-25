@@ -98,7 +98,7 @@ export default function AIDocentChat({
           <Sparkles size={18} color="#f59e0b" />
           <span>Ask GOLMO AI Docent</span>
           {currentStop && (
-            <span style={{ fontSize: '0.75rem', background: 'rgba(255, 126, 54, 0.15)', color: '#ffaa7a', padding: '2px 8px', borderRadius: '12px' }}>
+            <span style={{ fontSize: '0.75rem', background: 'rgba(234, 88, 12, 0.1)', color: '#ea580c', padding: '2px 8px', borderRadius: '12px' }}>
               Near Stop {currentStop.order}
             </span>
           )}
@@ -113,7 +113,7 @@ export default function AIDocentChat({
         {messages.map((m) => (
           <div key={m.id} className={`chat-bubble ${m.sender}`}>
             {m.sender === 'assistant' && (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px', fontSize: '0.72rem', color: '#ffaa7a' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px', fontSize: '0.72rem', color: '#ea580c' }}>
                 <Bot size={13} />
                 <span>GOLMO Local Guide</span>
               </div>
@@ -123,7 +123,7 @@ export default function AIDocentChat({
         ))}
 
         {isTyping && (
-          <div className="chat-bubble assistant" style={{ fontStyle: 'italic', color: '#94a3b8' }}>
+          <div className="chat-bubble assistant" style={{ fontStyle: 'italic', color: 'var(--text-muted)' }}>
             GOLMO AI is searching alley archives...
           </div>
         )}
