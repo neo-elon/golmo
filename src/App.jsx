@@ -293,6 +293,7 @@ export default function App() {
         onSelectStop={(stop) => setSelectedStop(stop)}
         onMapClickLocation={handleMapClickLocation}
         isSimulating={isSimulating}
+        lang={lang}
       />
 
       {/* Floating Card for Selected/Approaching Stop */}

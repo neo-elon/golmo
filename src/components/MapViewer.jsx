@@ -9,14 +9,18 @@ export default function MapViewer({
   completedStopIds,
   onSelectStop,
   onMapClickLocation,
-  isSimulating
+  isSimulating,
+  lang = 'en'
 }) {
   const mapContainerRef = useRef(null);
   const mapRef = useRef(null);
+  const tileLayerRef = useRef(null);
   const userMarkerRef = useRef(null);
   const stopMarkersRef = useRef({});
   const geofenceCirclesRef = useRef({});
   const polylineRef = useRef(null);
+
+  const getTileUrl = (l) => `https://mt{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=${l === 'kr' ? 'ko' : 'en'}`;
 
   // Initialize Leaflet Map once
   useEffect(() => {
@@ -31,11 +35,14 @@ export default function MapViewer({
       attributionControl: false
     });
 
-    // OpenStreetMap Humanitarian (HOT) tile layer - Warm, clear alleyways, completely free & no API key required
-    L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team'
+    // Multilingual Google Maps tile layer (dynamically switches language between EN and KO)
+    const tileLayer = L.tileLayer(getTileUrl(lang), {
+      maxZoom: 20,
+      subdomains: ['0', '1', '2', '3'],
+      attribution: '&copy; Google Maps'
     }).addTo(map);
+
+    tileLayerRef.current = tileLayer;
 
     // Zoom control in custom location
     L.control.zoom({ position: 'bottomright' }).addTo(map);
@@ -54,6 +61,13 @@ export default function MapViewer({
       mapRef.current = null;
     };
   }, []);
+
+  // Dynamically update tile layer language when lang changes
+  useEffect(() => {
+    if (tileLayerRef.current) {
+      tileLayerRef.current.setUrl(getTileUrl(lang));
+    }
+  }, [lang]);
 
   // Update stops and route polyline when tour changes
   useEffect(() => {
