@@ -43,6 +43,9 @@ export const TOURS = [
         fullScript: `Welcome to GOLMO. You are standing in front of Yeongchumun, the Autumn Greeting Gate of Gyeongbokgung Palace. 
 Notice how the busy avenues of central Seoul suddenly melt into a quieter rhythm the moment you face west. Centuries ago, while kings and ambassadors used the grand southern gates, court painters, poets, and palace ladies used this very gate to slip quietly into the residential alleyways of Seochon. 
 Take a deep breath. From here, we turn our backs to the royal grandeur and step into the living memory of ordinary Seoulites. Let's begin our journey into the labyrinth.`,
+        fullScriptKr: `골모(GOLMO) 오디오 투어에 오신 것을 환영합니다. 여러분은 지금 경복궁의 서문인 영추문 앞에 서 계십니다. 
+번화한 세종대로에서 불과 몇 걸음 걸어왔을 뿐인데, 서쪽을 마주하는 순간 고즈넉한 정적이 찾아옵니다. 조선 시대 왕과 고관들이 남쪽의 광화문을 드나들 때, 궁중 화원과 천문학자, 궁녀들은 바로 이 문을 통해 서촌 골목으로 빠져나갔습니다. 
+자, 이제 궁궐의 담장을 뒤로하고 보통 사람들의 시간이 켜켜이 쌓인 서촌의 골목길 속으로 발걸음을 옮겨봅니다.`,
         funFact: "Yeongchumun collapsed in 1926 under Japanese rule due to vibrations from tram tracks, and was rebuilt in 1975.",
         ambientTrack: "palace-wind",
         suggestedDocentPrompt: "Why did court officials prefer living in Seochon rather than Bukchon?"
@@ -50,40 +53,46 @@ Take a deep breath. From here, we turn our backs to the royal grandeur and step 
       {
         id: "stop-2",
         order: 2,
+        title: "Boan Stay & 80-Year-Old Historic Inn",
+        titleKr: "보안여관: 예술가들의 80년 보금자리",
+        lat: 37.5786,
+        lng: 126.9726,
+        radiusMeters: 25,
+        narrationDuration: "3:15",
+        audioSeconds: 195,
+        imageUrl: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=80",
+        summary: "A humble vintage inn where penniless poets paid for lodging with freshly written verses, now a gallery and book café.",
+        fullScript: `Just two minutes south along the palace wall stands Tongui-dong Boan Inn (Boan Yeogwan). 
+From 1936 to the mid-2000s, this was a traveler's haven. In 1936, legendary poets like Seo Jeong-ju and Kim Dong-ni founded their literary movement inside Room 10. Back then, starving artists unable to pay their room tab would leave signed manuscripts with the innkeeper. 
+Today, the original rough plaster walls, wooden door numbers, and creaking stairs are preserved as a contemporary art sanctuary. Walk inside, feel the cool whisper of old brick, and look through the windows back toward the palace trees.`,
+        fullScriptKr: `영추문에서 돌담길을 따라 남쪽으로 2분만 걸어 내려오면 마주하는 붉은 벽돌 건물, 통의동 보안여관입니다. 
+1936년부터 2000년대 중반까지 수많은 나그네가 묵어가던 여관이었습니다. 1936년 시인 서정주와 소설가 김동리가 10호실에 모여 문학 동인지 '시인부락'을 창간한 곳이기도 합니다. 방값을 낼 돈이 없던 가난한 예술가들은 갓 써 내려간 시 원고를 여관 주인에게 맡기곤 했습니다. 
+낡은 흙벽과 삐걱거리는 목조 계단이 그대로 보존된 이곳에서 80년 예술가들의 온기를 느껴보세요.`,
+        funFact: "Boan Inn operated as an active motel until 2004 before being saved from demolition by cultural preservationists.",
+        ambientTrack: "cafe-jazz",
+        suggestedDocentPrompt: "What is the best way to spend the evening around Boan 1942?"
+      },
+      {
+        id: "stop-3",
+        order: 3,
         title: "House of Yi Sang: Modernist Solitude",
         titleKr: "이상의 집: 모던 보이의 방황",
-        lat: 37.5818,
-        lng: 126.9698,
+        lat: 37.5780,
+        lng: 126.9710,
         radiusMeters: 25,
         narrationDuration: "3:10",
         audioSeconds: 190,
         imageUrl: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
         summary: "The childhood home of Korea's most avant-garde modernist poet, disguised behind an iron gate.",
-        fullScript: `Step inside the narrow wooden threshold. This is the spot where poet and architect Yi Sang lived for two decades during the 1920s and 30s. 
+        fullScript: `Cross Jahamun-ro into the alley of Chebu-dong. Step inside the narrow wooden threshold. This is the spot where poet and architect Yi Sang lived for two decades during the 1920s and 30s. 
 Imagine a young man walking these cobblestones in a trench coat, brooding over existential dread in a rapidly modernizing colonized city. Inside, a pitch-black steel chamber awaits you. If you step in and close the heavy door, a subtle beam of light illuminates his manuscripts on the wall. 
-Take two minutes to savor the quiet tea smell lingering in the air before you step back out onto Jahamun-ro.`,
+Take two minutes to savor the quiet tea smell lingering in the air before we venture deeper into Nuha-dong.`,
+        fullScriptKr: `자하문로를 건너 서쪽 체부동 골목으로 들어서면 천재 시인이자 건축가였던 이상의 옛 집터가 나타납니다. 
+1920~30년대, 트렌치코트를 깃을 세우고 고뇌에 찬 눈빛으로 이 골목을 거닐던 청년 이상의 모습을 상상해보세요. 내부의 육중한 검은 철문 안으로 들어서면 어둠 속에서 한 줄기 빛이 벽면의 시 원고를 비춥니다. 
+은은한 차 향기가 맴도는 공간에서 모던 보이 이상의 숨결을 느껴본 뒤, 다음 골목으로 걸어가 봅니다.`,
         funFact: "Yi Sang originally trained as an architectural engineer before revolutionizing Korean surrealist literature.",
         ambientTrack: "vintage-typewriter",
         suggestedDocentPrompt: "What was 1930s 'Modern Boy' culture in Seoul like?"
-      },
-      {
-        id: "stop-3",
-        order: 3,
-        title: "Tongin Secret Alleys & Hyojadong Bakery",
-        titleKr: "통인시장 뒷골목과 효자베이커리",
-        lat: 37.5808,
-        lng: 126.9678,
-        radiusMeters: 25,
-        narrationDuration: "2:50",
-        audioSeconds: 170,
-        imageUrl: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
-        summary: "Vibrant aromas of sesame oil, vintage brass-coin lunchboxes, and oven-fresh corn bread from 1985.",
-        fullScript: `Close your eyes for three seconds and breathe in through your nose. Do you catch the scent of toasted sesame oil, garlic, and hot bread? 
-You have entered the lively underbelly of Tongin Market. While day tourists queue with brass 'Yeopjeon' coins for lunchboxes, look at the narrow staircases branching uphill behind the stalls. 
-Look for the tiny blue sign of Hyoja Bakery. For over 35 years, they supplied bread to the Blue House (Cheong Wa Dae). The elderly bakers here still insist on handing you a warm, generous bread sample before you even say hello.`,
-        funFact: "The marketplace was established in 1941 as a public market for Japanese residents during the occupation, later reclaimed by Korean vendors.",
-        ambientTrack: "market-murmur",
-        suggestedDocentPrompt: "What is the traditional 'Yeopjeon' lunchbox at Tongin Market?"
       },
       {
         id: "stop-4",
@@ -100,6 +109,9 @@ Look for the tiny blue sign of Hyoja Bakery. For over 35 years, they supplied br
         fullScript: `Slow your walking pace right here. Notice how narrow this alley is—just wide enough for two people to pass without brushing shoulders. 
 Unlike the grand aristocratic mansions of Bukchon, the hanoks of Nuha-dong are smaller, cozy 'urban hanoks' built in the 1930s. Look closely at the clay roof tiles; in rainy seasons, water drops from the eaves create a natural rhythm that inspired generations of painters. 
 Please keep your voice low; real families live behind these cedar gates, hanging persimmons to dry in autumn and brewing barley tea.`,
+        fullScriptKr: `여기서 걸음을 조금 늦춰보세요. 두 사람이 겨우 어깨를 비껴 지나갈 만큼 좁고 정겨운 누하동 한옥 골목길입니다. 
+북촌의 웅장한 대갓집 한옥과 달리, 이곳은 1930년대 서민들의 삶에 맞춰 지어진 아늑한 도시형 한옥들입니다. 처마 끝 기와지붕들이 서로 맞닿아 하늘을 가르고, 대문 앞에는 고추 화분과 빨래가 햇볕을 쬐고 있습니다. 
+실제 주민들이 살아가며 보리차를 끓이고 계절을 맞이하는 살아 숨 쉬는 골목의 온기를 가만히 느껴보세요.`,
         funFact: "Urban hanoks integrated glass window panes and brick chimneys into traditional timber framing to adapt to 20th-century city living.",
         ambientTrack: "hanok-rain",
         suggestedDocentPrompt: "Why are the alleys in Nuha-dong so narrow and maze-like?"
@@ -107,6 +119,28 @@ Please keep your voice low; real families live behind these cedar gates, hanging
       {
         id: "stop-5",
         order: 5,
+        title: "Tongin Secret Alleys & Hyojadong Bakery",
+        titleKr: "통인시장 뒷골목과 효자베이커리",
+        lat: 37.5808,
+        lng: 126.9680,
+        radiusMeters: 25,
+        narrationDuration: "2:50",
+        audioSeconds: 170,
+        imageUrl: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+        summary: "Vibrant aromas of sesame oil, vintage brass-coin lunchboxes, and oven-fresh corn bread from 1985.",
+        fullScript: `Close your eyes for three seconds and breathe in through your nose. Do you catch the scent of toasted sesame oil, garlic, and hot bread? 
+You have entered the lively underbelly of Tongin Market. While day tourists queue with brass 'Yeopjeon' coins for lunchboxes, look at the narrow staircases branching uphill behind the stalls. 
+Look for the tiny blue sign of Hyoja Bakery. For over 35 years, they supplied bread to the Blue House. The elderly bakers here still insist on handing you a warm, generous bread sample before you even say hello.`,
+        fullScriptKr: `잠시 멈춰 서서 코로 숨을 깊게 들이쉬어 보세요. 고소한 참기름 냄새와 노릇하게 구워진 빵 냄새가 바람을 타고 번집니다. 
+서촌의 중심인 통인시장 골목에 도착했습니다. 엽전 도시락을 들고 시장을 누비는 여행자들 뒤편으로, 좁은 계단길들이 옥인동 언덕으로 이어집니다. 
+시장 서쪽 출구 근처의 '효자동베이커리'를 찾아보세요. 35년 넘게 청와대에 빵을 납품했던 옛 빵집으로, 인사도 건네기 전에 푸짐한 빵 시식을 손에 쥐여주는 정겨운 인심이 살아있는 곳입니다.`,
+        funFact: "The marketplace was established in 1941 as a public market for Japanese residents during the occupation, later reclaimed by Korean vendors.",
+        ambientTrack: "market-murmur",
+        suggestedDocentPrompt: "What is the traditional 'Yeopjeon' lunchbox at Tongin Market?"
+      },
+      {
+        id: "stop-6",
+        order: 6,
         title: "Suseong-dong Valley: Nature Beneath Inwangsan",
         titleKr: "수성동 계곡: 겸재 정선의 산수화 속으로",
         lat: 37.5811,
@@ -118,29 +152,13 @@ Please keep your voice low; real families live behind these cedar gates, hanging
         summary: "The spot where Joseon master Jeong Seon painted mist-covered granite cliffs, restored after 40 years hidden beneath concrete.",
         fullScript: `Look upward toward the dramatic granite face of Mount Inwangsan towering right in front of you. 
 Listen to the gurgling water beneath the stones. This is Suseong-dong Valley, which translates to 'Valley of Water Sounds'. In the 18th century, the master painter Jeong Seon sat on this exact rock, painting his immortal ink landscape. 
-Yet, in 1971, a massive concrete apartment complex was built directly over this valley! Only in 2012 did the city tear the apartments down and miraculously uncover the original Joseon stone bridge—Girin-gyo—intact beneath the debris.`,
+Yet, in 1971, a massive concrete apartment complex was built directly over this valley! Only in 2012 did the city tear the apartments down and miraculously uncover the original Joseon stone bridge—Girin-gyo—intact beneath the debris. You have walked from royal walls into pure mountain breath.`,
+        fullScriptKr: `눈을 들어 인왕산의 웅장한 화강암 바위 절벽을 올려다보세요. 바위 틈새로 졸졸 흐르는 맑은 물소리가 귓가를 간지럽힙니다. 
+'물소리가 빼어난 계곡'이라는 뜻의 수성동(水聲洞) 계곡입니다. 조선 후기의 거장 겸재 정선이 바로 이 바위에 앉아 진경산수화를 그렸던 유서 깊은 명승지입니다. 
+놀랍게도 1971년 이 아름다운 계곡 위를 콘크리트 아파트로 덮어버렸으나, 2012년 아파트를 철거하면서 300년 전의 돌다리 '기린교'가 원형 그대로 복원되었습니다. 궁궐 문에서 시작해 산자락 물소리로 끝나는 서촌 탐험이 완성되었습니다.`,
         funFact: "Girin-gyo is the only original Joseon stone arch bridge in Seoul that remains in its authentic historical location.",
         ambientTrack: "valley-stream",
         suggestedDocentPrompt: "Tell me about Jeong Seon and the True-View landscape painting style."
-      },
-      {
-        id: "stop-6",
-        order: 6,
-        title: "Boan Stay & 80-Year-Old Historic Inn",
-        titleKr: "보안여관: 예술가들의 80년 보금자리",
-        lat: 37.5786,
-        lng: 126.9726,
-        radiusMeters: 25,
-        narrationDuration: "3:15",
-        audioSeconds: 195,
-        imageUrl: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=80",
-        summary: "A humble vintage inn where penniless poets paid for lodging with freshly written verses, now a gallery and book café.",
-        fullScript: `Our final stop brings us back toward the palace wall to Tongui-dong Boan Inn (Boan Yeogwan). 
-From 1936 to the mid-2000s, this was a traveler's inn. In 1936, legendary poets like Seo Jeong-ju and Kim Dong-ni founded their literary movement inside Room 10. Back then, starving artists unable to pay their room tab would leave signed manuscripts with the innkeeper. 
-Today, the original rough plaster walls, wooden door numbers, and creaking stairs are preserved as a contemporary art haven. Walk up to the 2nd floor Boan Books, pick up a coffee, and gaze back out toward the palace trees. You have completed the Seochon story.`,
-        funFact: "Boan Inn operated as an active motel until 2004 before being saved from demolition by cultural preservationists.",
-        ambientTrack: "cafe-jazz",
-        suggestedDocentPrompt: "What is the best way to spend the evening around Boan 1942?"
       }
     ]
   },
@@ -192,6 +210,26 @@ Unlike busy vehicle boulevards, this sunken walkway is entirely dedicated to ped
       {
         id: "cheongna-stop-2",
         order: 2,
+        title: "Ruby-ro Waterfront Coffee Alley",
+        titleKr: "루비로 수변 브런치 & 스페셜티 커피 골목",
+        lat: 37.5358,
+        lng: 126.6515,
+        radiusMeters: 25,
+        narrationDuration: "2:40",
+        audioSeconds: 160,
+        imageUrl: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
+        summary: "A cozy neighborhood enclave lined with artisanal micro-roasteries, warm bakeries, and outdoor pet-friendly terrace cafes.",
+        fullScript: `Step up the granite staircase from the water onto Ruby-ro. The aroma of freshly baked salt bread and single-origin Ethiopian coffee immediately greets you. 
+Unlike the high-rise commercial sectors, this pocket of Cheongna is built with warm red-brick townhouses and tree-lined pedestrian alleys. Local baristas here take pride in slow-drip brews, and you will often find neighborhood residents reading books with their dogs on the sunny outdoor terraces. It is the perfect place to pause for a warm cup before continuing toward the sunset.`,
+        fullScriptKr: `물가에서 계단을 올라 루비로 골목으로 들어서면, 갓 구운 소금빵과 스페셜티 원두의 고소한 향이 공기를 채웁니다. 
+고층 빌딩숲과 달리 붉은 벽돌과 가로수가 어우러진 이 골목은 청라 주민들이 가장 아끼는 비밀 브런치 골목입니다. 야외 테라스에서 반려견과 함께 책을 읽는 이웃들의 여유를 느끼며, 따뜻한 드립 커피 한 잔의 휴식을 즐겨보세요.`,
+        funFact: "Ruby-ro gets its name from Cheongna's jewel-themed street naming system (Diamond-ro, Emerald-ro, Sapphire-ro, and Ruby-ro).",
+        ambientTrack: "cafe-jazz",
+        suggestedDocentPrompt: "Tell me about the gemstone naming story of Cheongna's avenues."
+      },
+      {
+        id: "cheongna-stop-3",
+        order: 3,
         title: "Cheongna Lake Park Musical Fountain",
         titleKr: "청라호수공원 음악분수와 수변 무대",
         lat: 37.5305,
@@ -210,28 +248,28 @@ Look toward the center of the lake: here stands the legendary Musical Fountain, 
         suggestedDocentPrompt: "When does the Cheongna Lake Park musical fountain show start?"
       },
       {
-        id: "cheongna-stop-3",
-        order: 3,
-        title: "Ruby-ro Waterfront Coffee Alley",
-        titleKr: "루비로 수변 브런치 & 스페셜티 커피 골목",
-        lat: 37.5358,
-        lng: 126.6575,
-        radiusMeters: 25,
-        narrationDuration: "2:40",
-        audioSeconds: 160,
-        imageUrl: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
-        summary: "A cozy neighborhood enclave lined with artisanal micro-roasteries, warm bakeries, and outdoor pet-friendly terrace cafes.",
-        fullScript: `Step up the granite staircase from the water onto Ruby-ro. The aroma of freshly baked salt bread and single-origin Ethiopian coffee immediately greets you. 
-Unlike the high-rise commercial sectors, this pocket of Cheongna is built with warm red-brick townhouses and tree-lined pedestrian alleys. Local baristas here take pride in slow-drip brews, and you will often find neighborhood residents reading books with their dogs on the sunny outdoor terraces. It is the perfect place to pause for a warm cup before continuing toward the sunset.`,
-        fullScriptKr: `물가에서 계단을 올라 루비로 골목으로 들어서면, 갓 구운 소금빵과 스페셜티 원두의 고소한 향이 공기를 채웁니다. 
-고층 빌딩숲과 달리 붉은 벽돌과 가로수가 어우러진 이 골목은 청라 주민들이 가장 아끼는 비밀 브런치 골목입니다. 야외 테라스에서 반려견과 함께 책을 읽는 이웃들의 여유를 느끼며, 따뜻한 드립 커피 한 잔의 휴식을 즐겨보세요.`,
-        funFact: "Ruby-ro gets its name from Cheongna's jewel-themed street naming system (Diamond-ro, Emerald-ro, Sapphire-ro, and Ruby-ro).",
-        ambientTrack: "cafe-jazz",
-        suggestedDocentPrompt: "Tell me about the gemstone naming story of Cheongna's avenues."
-      },
-      {
         id: "cheongna-stop-4",
         order: 4,
+        title: "Simgokcheon Reed Wetlands & Starlight Path",
+        titleKr: "심곡천 갈대습지와 별빛 산책로",
+        lat: 37.5252,
+        lng: 126.6415,
+        radiusMeters: 25,
+        narrationDuration: "3:00",
+        audioSeconds: 180,
+        imageUrl: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+        summary: "A tranquil natural wetland preserve where wild silver grasses whisper in the wind and migratory herons rest.",
+        fullScript: `Our path leads south to the pristine water wetlands of Simgokcheon. Along the stream, tall silver reeds rustle in the coastal wind. 
+White herons and mallard ducks wade quietly through the shallows. At twilight, soft solar-powered ground lanterns illuminate the wooden boardwalk, creating what locals affectionately call the Starlight Path. As you finish your walk, listen closely to the whispering reeds. You have uncovered the serene water soul of Incheon.`,
+        fullScriptKr: `수로를 따라 남쪽으로 향하면 도심 속 고요한 자연을 품은 심곡천 갈대습지가 펼쳐집니다. 
+은빛 갈대가 바람에 스치는 소리와 함께 백로와 청둥오리가 여유롭게 노니는 생태 하천입니다. 해 질 무렵 데크길을 따라 은은한 조명이 켜지며 마치 별빛 위를 걷는 듯한 낭만을 선사합니다. 바람에 흔들리는 갈대 소리와 함께 평화로운 휴식을 즐겨보세요.`,
+        funFact: "Over 30 species of migratory birds winter in Simgokcheon wetlands each year on their journey along the East Asian-Australasian Flyway.",
+        ambientTrack: "valley-stream",
+        suggestedDocentPrompt: "What kinds of migratory birds visit the wetlands around Cheongna?"
+      },
+      {
+        id: "cheongna-stop-5",
+        order: 5,
         title: "Eco-Bridge Sunset Observatory",
         titleKr: "청라 에코 브릿지 & 석양 전망대",
         lat: 37.5278,
@@ -241,33 +279,13 @@ Unlike the high-rise commercial sectors, this pocket of Cheongna is built with w
         audioSeconds: 210,
         imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
         summary: "A wooden panoramic sky-bridge elevated above the water, facing the golden evening glow toward Yeongjong Island and the West Sea.",
-        fullScript: `Climb the gently curving wooden ramp of the Eco-Bridge. As you reach the crest, turn your eyes directly westward. The salty sea breeze carrying across from Incheon Harbor touches your face. 
+        fullScript: `Climb the gently curving wooden ramp of the Eco-Bridge for our final sunset climax. As you reach the crest, turn your eyes directly westward. The salty sea breeze carrying across from Incheon Harbor touches your face. 
 When the afternoon sun dips low, the entire lake surface transforms into liquid copper and molten gold. In the far distance, you can catch the faint silhouette of Yeongjong Grand Bridge spanning the sea toward Incheon International Airport. It is here that photographers and evening joggers pause in total silence to watch the sky melt from tangerine to violet.`,
-        fullScriptKr: `완만한 곡선의 에코 브릿지 나무 데크를 따라 올라서면 서해에서 불어오는 시원한 바닷바람이 느껴집니다. 
-해 질 무렵, 호수 전체는 눈부신 황금빛으로 물들고, 저 멀리 영종대교의 실루엣 너머로 서해의 붉은 노을이 장관을 이룹니다. 청라 주민들과 러너들이 발걸음을 멈추고 귤빛에서 보랏빛으로 물드는 하늘을 감상하는 최고의 일몰 명소입니다.`,
+        fullScriptKr: `청라 투어의 마지막 대미를 장식할 에코 브릿지 전망대에 올라섭니다. 완만한 곡선의 나무 데크를 따라 올라서면 서해에서 불어오는 시원한 바닷바람이 느껴집니다. 
+해 질 무렵, 호수 전체는 눈부신 황금빛으로 물들고, 저 멀리 영종대교의 실루엣 너머로 서해의 붉은 노을이 장관을 이룹니다. 주황빛에서 보랏빛으로 물드는 황홀한 일몰과 함께 청라의 여정을 완성해보세요.`,
         funFact: "The Eco-Bridge was engineered to connect fragmented ecological corridors, allowing local birds and amphibians to traverse between lake wetlands safely.",
         ambientTrack: "palace-wind",
         suggestedDocentPrompt: "What is the best spot to view the sunset in Incheon Cheongna?"
-      },
-      {
-        id: "cheongna-stop-5",
-        order: 5,
-        title: "Simgokcheon Reed Wetlands & Starlight Path",
-        titleKr: "심곡천 갈대습지와 별빛 산책로",
-        lat: 37.5252,
-        lng: 126.6480,
-        radiusMeters: 25,
-        narrationDuration: "3:00",
-        audioSeconds: 180,
-        imageUrl: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
-        summary: "A tranquil natural wetland preserve where wild silver grasses whisper in the wind and migratory herons rest.",
-        fullScript: `Our final stop leads us to the southern border of Cheongna, where the manicured city gracefully yields to wild nature. Along Simgokcheon Stream, tall silver reeds rustle in the coastal wind. 
-White herons and mallard ducks wade quietly through the shallows. At twilight, soft solar-powered ground lanterns illuminate the wooden boardwalk, creating what locals affectionately call the Starlight Path. As you finish your walk, listen closely to the whispering reeds. You have uncovered the serene water soul of Incheon.`,
-        fullScriptKr: `청라 투어의 마지막 여정은 도시의 화려함을 지나 자연의 품으로 들어가는 심곡천 갈대습지입니다. 
-은빛 갈대가 바람에 스치는 소리와 함께 백로와 청둥오리가 여유롭게 노니는 생태 하천입니다. 해가 지면 데크길을 따라 은은한 조명이 켜지며 마치 별빛 위를 걷는 듯한 낭만을 선사합니다. 바람에 흔들리는 갈대 소리와 함께 청라의 평화로운 밤을 맞이해보세요.`,
-        funFact: "Over 30 species of migratory birds winter in Simgokcheon wetlands each year on their journey along the East Asian-Australasian Flyway.",
-        ambientTrack: "valley-stream",
-        suggestedDocentPrompt: "What kinds of migratory birds visit the wetlands around Cheongna?"
       }
     ]
   },
