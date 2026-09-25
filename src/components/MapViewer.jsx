@@ -31,10 +31,10 @@ export default function MapViewer({
       attributionControl: false
     });
 
-    // CartoDB Voyager tile layer - Bright, vivid, aesthetic light theme
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    // OpenStreetMap Humanitarian (HOT) tile layer - Warm, clear alleyways, completely free & no API key required
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      subdomains: 'abcd'
+      attribution: '&copy; OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team'
     }).addTo(map);
 
     // Zoom control in custom location

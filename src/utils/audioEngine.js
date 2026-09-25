@@ -195,7 +195,9 @@ class GolmoAudioEngine {
     };
 
     utterance.onerror = (err) => {
-      console.warn("Speech error:", err);
+      if (err.error !== 'interrupted' && err.error !== 'canceled') {
+        console.warn("Speech error:", err);
+      }
       this.isPlaying = false;
       this.isPaused = false;
       clearInterval(this.timerInterval);

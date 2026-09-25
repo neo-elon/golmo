@@ -34,7 +34,7 @@ export const TOURS = [
         radiusMeters: 25,
         narrationDuration: "2:40",
         audioSeconds: 160,
-        imageUrl: "https://images.unsplash.com/photo-1538669715315-155098f6bbe4?auto=format&fit=crop&w=800&q=80",
+        imageUrl: "https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?auto=format&fit=crop&w=800&q=80",
         summary: "The west entrance to the royal palace, where court astrologers and scholars slipped out into the alleys after dark.",
         fullScript: `Welcome to GOLMO. You are standing in front of Yeongchumun, the Autumn Greeting Gate of Gyeongbokgung Palace. 
 Notice how the busy avenues of central Seoul suddenly melt into a quieter rhythm the moment you face west. Centuries ago, while kings and ambassadors used the grand southern gates, court painters, poets, and palace ladies used this very gate to slip quietly into the residential alleyways of Seochon. 
