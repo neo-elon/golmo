@@ -141,6 +141,132 @@ Today, the original rough plaster walls, wooden door numbers, and creaking stair
     ]
   },
   {
+    id: "incheon-cheongna-waterways",
+    title: "Cheongna: Waterways & Future Sunset",
+    titleKr: "인천 청라: 물길 따라 걷는 노을 산책",
+    tagline: "Follow the 4.5km tranquil canal ways and expansive lake park where cutting-edge modern architecture meets the golden sunset of the West Sea.",
+    taglineKr: "4.5km 도심 수로와 호수공원을 따라, 첨단 워터프론트 건축과 서해의 황금빛 노을이 빚어내는 감성 산책",
+    city: "Incheon",
+    district: "Cheongna (Seo-gu)",
+    price: 5.99,
+    priceKr: "₩7,500",
+    rating: 4.96,
+    reviewsCount: 112,
+    durationMinutes: 85,
+    distanceKm: 3.1,
+    difficulty: "Breeze Walk",
+    category: "Waterfront & Modern Cityscape",
+    coverImage: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+    creator: {
+      name: "Daniel Kang",
+      role: "Urban Architect & Sunset Runner",
+      avatar: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=300&q=80",
+      bio: "Born in Incheon, designing water-centric urban living. I know every secret bench along Cheongna's canals where the evening reflection is magical."
+    },
+    stops: [
+      {
+        id: "cheongna-stop-1",
+        order: 1,
+        title: "Cheongna Canal Way Central Promenade",
+        titleKr: "청라 커낼웨이 중앙 수변 산책로",
+        lat: 37.5332,
+        lng: 126.6534,
+        radiusMeters: 25,
+        narrationDuration: "2:50",
+        audioSeconds: 170,
+        imageUrl: "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=800&q=80",
+        summary: "The pedestrian heart of Cheongna, where 4.5km of continuous waterways wind past vibrant waterside cafes and sunken garden terraces.",
+        fullScript: `Welcome to Incheon Cheongna. Stand by the water railing and listen to the gentle splash against the stone embankment. You are on Cheongna Canal Way, a 4.5-kilometer artificial waterway that breathes life straight through the center of this international city. 
+Unlike busy vehicle boulevards, this sunken walkway is entirely dedicated to pedestrians, cyclists, and families. Notice how modern glass facades reflect off the moving water beneath the bridge arches. Take a gentle breath of fresh air; our water journey has just begun.`,
+        fullScriptKr: `청라 커낼웨이에 오신 것을 환영합니다. 난간 너머로 들려오는 잔잔한 물소리에 귀를 기울여보세요. 이곳은 청라국제도시 중심을 가로지르는 4.5km의 수변 보행로입니다. 
+차도보다 한 층 아래로 설계된 선큰(Sunken) 산책로는 오직 걷는 사람과 자전거, 가족들을 위한 온전한 쉼터입니다. 수면에 비치는 현대적인 건축물들의 반영을 바라보며, 시원한 물길 산책을 시작해 보세요.`,
+        funFact: "The water in Cheongna Canal Way is constantly cycled from the Han River and western sea tributary, filtered through eco-wetland purification systems.",
+        ambientTrack: "palace-wind",
+        suggestedDocentPrompt: "Why was Cheongna designed as a canal-based water city?"
+      },
+      {
+        id: "cheongna-stop-2",
+        order: 2,
+        title: "Cheongna Lake Park Musical Fountain",
+        titleKr: "청라호수공원 음악분수와 수변 무대",
+        lat: 37.5305,
+        lng: 126.6432,
+        radiusMeters: 30,
+        narrationDuration: "3:15",
+        audioSeconds: 195,
+        imageUrl: "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=800&q=80",
+        summary: "One of Korea's largest artificial lake parks, featuring an iconic outdoor musical fountain reaching 70 meters into the sky.",
+        fullScript: `As you emerge from the canal into this vast expanse of water, the horizon suddenly opens wide. This is Cheongna Lake Park, covering nearly 700,000 square meters. 
+Look toward the center of the lake: here stands the legendary Musical Fountain, capable of shooting choreographed water jets 70 meters high into the open sky, synchronized with orchestral music and multi-color laser displays. Even on quiet weekday afternoons, sitting on the tiered wooden deck watching kayaks and solar-powered duck boats glide across the ripples gives an unmatched sense of space.`,
+        fullScriptKr: `좁은 수로를 지나 호수에 다다르면 시야가 탁 트입니다. 축구장 수십 개 크기에 달하는 청라호수공원입니다. 
+호수 중앙의 음악분수는 최고 70미터 높이까지 물줄기를 쏘아 올리며 오케스트라와 레이저가 어우러지는 화려한 쇼를 선사합니다. 조용한 낮 시간, 탁 트인 나무 데크에 앉아 수면 위를 유유히 떠다니는 카약과 보트를 바라보는 것만으로도 도심 속 완벽한 여유를 느낄 수 있습니다.`,
+        funFact: "The lake was designed with four distinct thematic zones: Echo, Tradition, Leisure, and Art, inspired by Korea's four traditional seasons.",
+        ambientTrack: "valley-stream",
+        suggestedDocentPrompt: "When does the Cheongna Lake Park musical fountain show start?"
+      },
+      {
+        id: "cheongna-stop-3",
+        order: 3,
+        title: "Ruby-ro Waterfront Coffee Alley",
+        titleKr: "루비로 수변 브런치 & 스페셜티 커피 골목",
+        lat: 37.5358,
+        lng: 126.6575,
+        radiusMeters: 25,
+        narrationDuration: "2:40",
+        audioSeconds: 160,
+        imageUrl: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
+        summary: "A cozy neighborhood enclave lined with artisanal micro-roasteries, warm bakeries, and outdoor pet-friendly terrace cafes.",
+        fullScript: `Step up the granite staircase from the water onto Ruby-ro. The aroma of freshly baked salt bread and single-origin Ethiopian coffee immediately greets you. 
+Unlike the high-rise commercial sectors, this pocket of Cheongna is built with warm red-brick townhouses and tree-lined pedestrian alleys. Local baristas here take pride in slow-drip brews, and you will often find neighborhood residents reading books with their dogs on the sunny outdoor terraces. It is the perfect place to pause for a warm cup before continuing toward the sunset.`,
+        fullScriptKr: `물가에서 계단을 올라 루비로 골목으로 들어서면, 갓 구운 소금빵과 스페셜티 원두의 고소한 향이 공기를 채웁니다. 
+고층 빌딩숲과 달리 붉은 벽돌과 가로수가 어우러진 이 골목은 청라 주민들이 가장 아끼는 비밀 브런치 골목입니다. 야외 테라스에서 반려견과 함께 책을 읽는 이웃들의 여유를 느끼며, 따뜻한 드립 커피 한 잔의 휴식을 즐겨보세요.`,
+        funFact: "Ruby-ro gets its name from Cheongna's jewel-themed street naming system (Diamond-ro, Emerald-ro, Sapphire-ro, and Ruby-ro).",
+        ambientTrack: "cafe-jazz",
+        suggestedDocentPrompt: "Tell me about the gemstone naming story of Cheongna's avenues."
+      },
+      {
+        id: "cheongna-stop-4",
+        order: 4,
+        title: "Eco-Bridge Sunset Observatory",
+        titleKr: "청라 에코 브릿지 & 석양 전망대",
+        lat: 37.5278,
+        lng: 126.6385,
+        radiusMeters: 25,
+        narrationDuration: "3:30",
+        audioSeconds: 210,
+        imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+        summary: "A wooden panoramic sky-bridge elevated above the water, facing the golden evening glow toward Yeongjong Island and the West Sea.",
+        fullScript: `Climb the gently curving wooden ramp of the Eco-Bridge. As you reach the crest, turn your eyes directly westward. The salty sea breeze carrying across from Incheon Harbor touches your face. 
+When the afternoon sun dips low, the entire lake surface transforms into liquid copper and molten gold. In the far distance, you can catch the faint silhouette of Yeongjong Grand Bridge spanning the sea toward Incheon International Airport. It is here that photographers and evening joggers pause in total silence to watch the sky melt from tangerine to violet.`,
+        fullScriptKr: `완만한 곡선의 에코 브릿지 나무 데크를 따라 올라서면 서해에서 불어오는 시원한 바닷바람이 느껴집니다. 
+해 질 무렵, 호수 전체는 눈부신 황금빛으로 물들고, 저 멀리 영종대교의 실루엣 너머로 서해의 붉은 노을이 장관을 이룹니다. 청라 주민들과 러너들이 발걸음을 멈추고 귤빛에서 보랏빛으로 물드는 하늘을 감상하는 최고의 일몰 명소입니다.`,
+        funFact: "The Eco-Bridge was engineered to connect fragmented ecological corridors, allowing local birds and amphibians to traverse between lake wetlands safely.",
+        ambientTrack: "palace-wind",
+        suggestedDocentPrompt: "What is the best spot to view the sunset in Incheon Cheongna?"
+      },
+      {
+        id: "cheongna-stop-5",
+        order: 5,
+        title: "Simgokcheon Reed Wetlands & Starlight Path",
+        titleKr: "심곡천 갈대습지와 별빛 산책로",
+        lat: 37.5252,
+        lng: 126.6480,
+        radiusMeters: 25,
+        narrationDuration: "3:00",
+        audioSeconds: 180,
+        imageUrl: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+        summary: "A tranquil natural wetland preserve where wild silver grasses whisper in the wind and migratory herons rest.",
+        fullScript: `Our final stop leads us to the southern border of Cheongna, where the manicured city gracefully yields to wild nature. Along Simgokcheon Stream, tall silver reeds rustle in the coastal wind. 
+White herons and mallard ducks wade quietly through the shallows. At twilight, soft solar-powered ground lanterns illuminate the wooden boardwalk, creating what locals affectionately call the Starlight Path. As you finish your walk, listen closely to the whispering reeds. You have uncovered the serene water soul of Incheon.`,
+        fullScriptKr: `청라 투어의 마지막 여정은 도시의 화려함을 지나 자연의 품으로 들어가는 심곡천 갈대습지입니다. 
+은빛 갈대가 바람에 스치는 소리와 함께 백로와 청둥오리가 여유롭게 노니는 생태 하천입니다. 해가 지면 데크길을 따라 은은한 조명이 켜지며 마치 별빛 위를 걷는 듯한 낭만을 선사합니다. 바람에 흔들리는 갈대 소리와 함께 청라의 평화로운 밤을 맞이해보세요.`,
+        funFact: "Over 30 species of migratory birds winter in Simgokcheon wetlands each year on their journey along the East Asian-Australasian Flyway.",
+        ambientTrack: "valley-stream",
+        suggestedDocentPrompt: "What kinds of migratory birds visit the wetlands around Cheongna?"
+      }
+    ]
+  },
+  {
     id: "euljiro-neon-and-iron",
     title: "Euljiro: Neon, Iron & Twilight Hophouses",
     titleKr: "을지로: 네온과 철공소, 노가리 골목",

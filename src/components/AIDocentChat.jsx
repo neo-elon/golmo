@@ -61,12 +61,26 @@ export default function AIDocentChat({
       let replyText = "";
       const lower = query.toLowerCase();
 
-      if (lower.includes('court') || lower.includes('yeongchumun') || lower.includes('gate') || lower.includes('palace')) {
+      if (lower.includes('cheongna') || lower.includes('waterway') || lower.includes('canal')) {
+        replyText = lang === 'kr'
+          ? `청라국제도시는 대한민국 최초로 도시 전체를 순환하는 4.5km 인공 수로 '커낼웨이(Canal Way)'를 중심으로 설계된 첨단 수변 도시입니다. 한강과 서해의 지류를 순환 정화하는 친환경 수로를 따라 차도와 분리된 산책로가 조성되어 있어, 도심 속에서도 물소리를 들으며 안전하고 평화롭게 걸을 수 있습니다!`
+          : `Cheongna is Korea's premier water-centric international city, built around a continuous 4.5km canal system called 'Canal Way'. The sunken pedestrian promenade separates walkers completely from vehicle traffic, circulating fresh water through smart eco-wetlands right into the grand Central Lake Park!`;
+      } else if (lower.includes('fountain') || lower.includes('musical') || lower.includes('lake')) {
+        replyText = lang === 'kr'
+          ? `청라호수공원 음악분수는 국내 최대 규모(길이 120m, 최대 분사 높이 70m)의 수변 무대입니다! 클래식, 최신 K-POP, 영화 OST에 맞춰 춤추는 물줄기와 레이저 쇼가 펼쳐집니다. 봄부터 가을까지 매주 저녁 시간대(19:30~20:30)에 환상적인 야경 공연이 열립니다.`
+          : `The Cheongna Lake Park Musical Fountain is one of the largest choreographed water stages in Asia, shooting water jets up to 70 meters high! Laser light shows and orchestral sound systems dance across the water surface every evening during spring, summer, and autumn.`;
+      } else if (lower.includes('sunset') || lower.includes('sunset spot') || lower.includes('eco-bridge') || lower.includes('view')) {
+        replyText = lang === 'kr'
+          ? `청라 최고의 노을 명소는 단연 '에코 브릿지(Eco-Bridge)'와 호수공원 서쪽 데크입니다! 맑은 날 해 질 무렵 서해 영종대교 너머로 붉게 물드는 황금빛 낙조가 호수 수면에 거울처럼 반사되는 광경은 전국 어디서도 보기 힘든 장관입니다.`
+          : `The absolute best sunset viewpoint is the wooden summit of the Eco-Bridge facing west! As the sun dips toward Yeongjong Island and the Yellow Sea, the entire lake turns into a shimmering sea of molten gold.`;
+      } else if (lower.includes('court') || lower.includes('yeongchumun') || lower.includes('gate') || lower.includes('palace')) {
         replyText = `Yeongchumun (Gate of Autumn Breeze) was the west gate of Gyeongbokgung. Unlike the grand Gwanghwamun where foreign dignitaries marched, Yeongchumun was the 'daily life portal' used by court astronomers, royal physicians, and palace ladies. When dusk fell, scholars and artists slipped out through this gate into the cozy pubs and hanoks of Seochon to compose poetry and discuss forbidden ideas!`;
       } else if (lower.includes('cafe') || lower.includes('coffee') || lower.includes('tea')) {
-        replyText = `Here are 2 authentic local gems right in this alley:
-1. 'Boan Books & Cafe' (2F of Boan Stay) - Overlooks the palace stone walls with quiet jazz and filtered drip coffee.
-2. 'MK2' (just 3 mins walk from Nuha-dong) - A legendary Seochon pioneer with Bauhaus furniture and decadent apricot tarts.`;
+        replyText = tour?.id === 'incheon-cheongna-waterways'
+          ? (lang === 'kr'
+            ? `청라 수변 추천 카페 2곳입니다:\n1. '루비로 커피 하우스' - 직접 볶은 싱글 오리진 드립 커피와 수제 소금빵이 일품인 테라스 카페.\n2. '호수 뷰 레이크 카페' - 2층 창가에서 탁 트인 호수공원과 분수를 감상할 수 있는 명소.`
+            : `Here are 2 favorite Cheongna cafes:\n1. 'Ruby-ro Micro-Roastery' - Artisanal single-origin pour-overs with outdoor canal terrace seats.\n2. 'Lakeview Panorama Cafe' - Best panoramic viewpoint overlooking the musical fountain.`)
+          : `Here are 2 authentic local gems in Seochon:\n1. 'Boan Books & Cafe' (2F of Boan Stay) - Overlooks palace stone walls with jazz.\n2. 'MK2' (Nuha-dong) - Bauhaus furniture with apricot tarts.`;
       } else if (lower.includes('yi sang') || lower.includes('poet') || lower.includes('modern boy')) {
         replyText = `In 1930s colonial Seoul, 'Modern Boys' and 'Modern Girls' were rebellious youth who embraced Western jazz, trench coats, espresso, and avant-garde art. Yi Sang was their tragic icon—an architectural engineer who wrote poetry backward and explored surrealism in narrow Seochon rooms while running bohemian cafes that always went bankrupt!`;
       } else if (lower.includes('roof') || lower.includes('hanok') || lower.includes('narrow')) {
@@ -74,7 +88,7 @@ export default function AIDocentChat({
       } else if (lower.includes('bukchon') || lower.includes('difference')) {
         replyText = `Bukchon ('North Village') was historically where high-ranking yangban nobility and royal in-laws built sprawling mansions. Seochon ('West Village') was the realm of the 'Jungin' (middle class)—court interpreters, painters, calligraphers, and doctors. That's why Seochon feels far more intimate, bohemian, and lived-in!`;
       } else {
-        replyText = `That's a wonderful detail to notice! Seochon is defined by layers of 600 years: Joseon scholars, 1930s modernist writers, 1970s blue-collar neighborhoods, and today's quiet indie workshops. Right around your current spot (${currentStop?.title || 'Seochon'}), if you peek into the side alleys, you'll see original granite foundation stones from centuries ago sitting beneath contemporary brick walls.`;
+        replyText = `That's a wonderful detail to notice! ${tour?.title || 'Our tour'} offers unique stories hidden beneath the surface. Right around your current stop (${currentStop?.title || 'this neighborhood'}), take a moment to look around at the architecture and local life along the path.`;
       }
 
       setMessages((prev) => [

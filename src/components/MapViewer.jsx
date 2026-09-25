@@ -94,6 +94,15 @@ export default function MapViewer({
       lineJoin: 'round'
     }).addTo(map);
 
+    // Smoothly fly camera to new tour area
+    if (latLngs.length > 0) {
+      map.flyToBounds(L.latLngBounds(latLngs), {
+        padding: [60, 60],
+        maxZoom: 16,
+        duration: 1.2
+      });
+    }
+
     // Render each stop marker & geofence radius
     tour.stops.forEach((stop) => {
       const isCompleted = completedStopIds.includes(stop.id);
